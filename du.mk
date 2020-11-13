@@ -25,6 +25,7 @@ $(call inherit-product, device/xiaomi/ginkgo/device.mk)
 
 # Inherit some common DirtyUnicorns stuff
 $(call inherit-product, vendor/du/config/common_full_phone.mk)
+$(call inherit-product-if-exists, vendor/pixelgapps/pixel-gapps.mk)
 
 # Device identifier
 PRODUCT_NAME := du_ginkgo
