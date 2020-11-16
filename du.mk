@@ -23,11 +23,12 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 # Inherit from ginkgo device
 $(call inherit-product, device/xiaomi/ginkgo/device.mk)
 
-# Inherit some common Potato sauce
-$(call inherit-product, vendor/potato/config/common_full_phone.mk)
+# Inherit some common DirtyUnicorns sauce
+$(call inherit-product, vendor/du/config/common_full_phone.mk)
+$(call inherit-product-if-exists, vendor/pixelgapps/pixel-gapps.mk)
 
 # Device identifier
-PRODUCT_NAME := potato_ginkgo
+PRODUCT_NAME := du_ginkgo
 PRODUCT_DEVICE := ginkgo
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi Note 8
